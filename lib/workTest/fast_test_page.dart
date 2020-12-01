@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/counter.dart';
-import 'package:flutter_app/second_screen.dart';
+import 'package:flutter_app/base/counter.dart';
+import 'package:flutter_app/workTest/index_page.dart';
 import 'package:provide/provide.dart';
 
 class FirstScreen extends StatefulWidget{
@@ -85,7 +85,7 @@ class FirstScreenState extends State<FirstScreen> with SingleTickerProviderState
                   setState(() {
                     selected = !selected;
                   });
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Index_page()));
                 },
               ),
               AnimatedCrossFade(

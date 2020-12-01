@@ -4,16 +4,26 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SecondScreen extends StatelessWidget{
+
+class ChartsFlutterTest extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() {
+    return ChartsFlutterTestState();
+  }
+
+}
+
+class ChartsFlutterTestState extends State<ChartsFlutterTest>{
 
   List<charts.Series> seriesList;
   bool animate;
 
-  SecondScreen(){
+  @override
+  void initState() {
+    super.initState();
     seriesList = _createRandomData();
     animate = false;
   }
-
 
   /// Create random data.
   static List<charts.Series<TimeSeriesSales, DateTime>> _createRandomData() {
@@ -44,7 +54,6 @@ class SecondScreen extends StatelessWidget{
       )
     ];
   }
-  // EXCLUDE_FROM_GALLERY_DOCS_END
 
   @override
   Widget build(BuildContext context) {
@@ -52,18 +61,18 @@ class SecondScreen extends StatelessWidget{
       body: SafeArea(
         child: Container(
           margin: EdgeInsets.only(
-            top: 100
+              top: 100
           ),
           width: 300,
           height: 300,
           child: charts.TimeSeriesChart(
-              seriesList,
-              animate: false,
-              defaultRenderer: charts.LineRendererConfig(
+            seriesList,
+            animate: false,
+            defaultRenderer: charts.LineRendererConfig(
                 includePoints: true,
                 includeArea: true,
                 stacked: true
-              ),
+            ),
             domainAxis: new charts.DateTimeAxisSpec(
               showAxisLine: false,
               renderSpec: charts.SmallTickRendererSpec(
@@ -93,11 +102,22 @@ class SecondScreen extends StatelessWidget{
                 ),
               ),
             ),
+            selectionModels: [
+              charts.SelectionModelConfig(
+                type: charts.SelectionModelType.info,
+                //切换选中数据时的回调函数
+                changedListener: (model){
+                  print("index:" + model.selectedDatum.first.index.toString());
+                },
+              ),
+            ],
           ),
         ),
       ),
     );
   }
+
+
 
 }
 
@@ -108,4 +128,3 @@ class TimeSeriesSales {
 
   TimeSeriesSales(this.time, this.sales);
 }
-

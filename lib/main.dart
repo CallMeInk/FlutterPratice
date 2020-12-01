@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/application.dart';
-import 'package:flutter_app/counter.dart';
-import 'package:flutter_app/first_screen.dart';
-import 'package:flutter_app/routes.dart';
-import 'package:flutter_app/second_screen.dart';
+import 'package:flutter_app/base/application.dart';
+import 'package:flutter_app/base/counter.dart';
+import 'package:flutter_app/workTest/charts_flutter_test.dart';
+import 'package:flutter_app/workTest/fast_test_page.dart';
+import 'package:flutter_app/base/routes.dart';
+import 'package:flutter_app/workTest/index_page.dart';
+import 'package:flutter_app/workTest/reorderablelist_test.dart';
 import 'package:provide/provide.dart';
 
 void main() {
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: SecondScreen(),
+      home: ChartsFlutterTest(),
       onGenerateRoute: Application.router.generator,
     );
   }

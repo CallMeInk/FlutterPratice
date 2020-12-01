@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_app/root_handlers.dart';
+import 'package:flutter_app/base/root_handlers.dart';
 
 import 'bundle.dart';
 import 'callback.dart';
