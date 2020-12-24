@@ -8,15 +8,19 @@ import 'package:flutter_app/workTest/index_page.dart';
 import 'package:flutter_app/workTest/reorderablelist_test.dart';
 import 'package:provide/provide.dart';
 
-import 'learning/animated_modal_barrier_test.dart';
-import 'learning/animated_opacity_test.dart';
-import 'learning/animated_physical_model_test.dart';
-import 'learning/animated_positioned_test.dart';
-import 'learning/animated_size_test.dart';
-import 'learning/animated_widget_test.dart';
-import 'learning/decorated_box_transition_test.dart';
-import 'learning/fade_transition_test.dart';
-import 'learning/hero_test1.dart';
+import 'learning/AnimationAndMotionWidgets/animated_modal_barrier_test.dart';
+import 'learning/AnimationAndMotionWidgets/animated_opacity_test.dart';
+import 'learning/AnimationAndMotionWidgets/animated_physical_model_test.dart';
+import 'learning/AnimationAndMotionWidgets/animated_positioned_test.dart';
+import 'learning/AnimationAndMotionWidgets/animated_size_test.dart';
+import 'learning/AnimationAndMotionWidgets/animated_widget_test.dart';
+import 'learning/AnimationAndMotionWidgets/decorated_box_transition_test.dart';
+import 'learning/AnimationAndMotionWidgets/fade_transition_test.dart';
+import 'learning/AnimationAndMotionWidgets/positioned_transition_test.dart';
+import 'learning/AnimationAndMotionWidgets/rotation_transition_test.dart';
+import 'learning/AnimationAndMotionWidgets/scale_transition_test.dart';
+import 'learning/AnimationAndMotionWidgets/size_transition_test.dart';
+import 'learning/AnimationAndMotionWidgets/slide_transition_test.dart';
 
 void main() {
   var counter = Counter();
@@ -56,7 +60,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: ChartsFlutterTest(),
+      home: SlideTransitionTest(),
       onGenerateRoute: Application.router.generator,
     );
   }
