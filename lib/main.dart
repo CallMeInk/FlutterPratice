@@ -8,6 +8,16 @@ import 'package:flutter_app/workTest/index_page.dart';
 import 'package:flutter_app/workTest/reorderablelist_test.dart';
 import 'package:provide/provide.dart';
 
+import 'learning/animated_modal_barrier_test.dart';
+import 'learning/animated_opacity_test.dart';
+import 'learning/animated_physical_model_test.dart';
+import 'learning/animated_positioned_test.dart';
+import 'learning/animated_size_test.dart';
+import 'learning/animated_widget_test.dart';
+import 'learning/decorated_box_transition_test.dart';
+import 'learning/fade_transition_test.dart';
+import 'learning/hero_test1.dart';
+
 void main() {
   var counter = Counter();
   var provider = Providers();

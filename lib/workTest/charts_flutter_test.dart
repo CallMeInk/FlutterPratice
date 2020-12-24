@@ -30,9 +30,9 @@ class ChartsFlutterTestState extends State<ChartsFlutterTest>{
     final random = new Random();
 
     final data = [
-      new TimeSeriesSales(DateTime(2017, 9, 19), random.nextInt(1000)),
-      new TimeSeriesSales(DateTime(2017, 9, 20), random.nextInt(1000)),
-      new TimeSeriesSales(DateTime(2017, 9, 21), random.nextInt(1000)),
+      new TimeSeriesSales(DateTime(2017, 9, 19), 0),
+      new TimeSeriesSales(DateTime(2017, 9, 20), 0),
+      new TimeSeriesSales(DateTime(2017, 9, 21), 0),
       new TimeSeriesSales(DateTime(2017, 9, 22), random.nextInt(1000)),
       new TimeSeriesSales(DateTime(2017, 9, 23), random.nextInt(1000)),
       new TimeSeriesSales(DateTime(2017, 9, 24), random.nextInt(1000)),
