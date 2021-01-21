@@ -21,6 +21,10 @@ import 'learning/AnimationAndMotionWidgets/rotation_transition_test.dart';
 import 'learning/AnimationAndMotionWidgets/scale_transition_test.dart';
 import 'learning/AnimationAndMotionWidgets/size_transition_test.dart';
 import 'learning/AnimationAndMotionWidgets/slide_transition_test.dart';
+import 'learning/AssetsImageIcon/assets_bundle_test.dart';
+import 'learning/AssetsImageIcon/icon_test.dart';
+import 'learning/AsyncWidgets/future_builder_test.dart';
+import 'learning/AsyncWidgets/stream_builder_test.dart';
 
 void main() {
   var counter = Counter();
@@ -60,7 +64,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: SlideTransitionTest(),
+      home: StreamBuilderTest(),
       onGenerateRoute: Application.router.generator,
     );
   }
