@@ -28,6 +28,9 @@ import 'learning/AsyncWidgets/stream_builder_test.dart';
 import 'learning/cupertinoWidget/cupertino_action_sheet_test.dart';
 import 'learning/cupertinoWidget/cupertino_activity_indicator_test.dart';
 import 'learning/cupertinoWidget/cupertino_alert_dialog_test.dart';
+import 'learning/cupertinoWidget/cupertino_button_test.dart';
+import 'learning/cupertinoWidget/cupertino_context_menu.dart';
+import 'learning/cupertinoWidget/cupertino_date_picker.dart';
 
 void main() {
   var counter = Counter();
@@ -67,7 +70,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: CupertinoAlertDialogTest(),
+      home: CupertinoDatePickerTest(),
       onGenerateRoute: Application.router.generator,
     );
   }
