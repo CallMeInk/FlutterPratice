@@ -31,6 +31,10 @@ import 'learning/cupertinoWidget/cupertino_alert_dialog_test.dart';
 import 'learning/cupertinoWidget/cupertino_button_test.dart';
 import 'learning/cupertinoWidget/cupertino_context_menu.dart';
 import 'learning/cupertinoWidget/cupertino_date_picker.dart';
+import 'learning/cupertinoWidget/cupertino_navigation_bar_test.dart';
+import 'learning/cupertinoWidget/cupertino_page_scaffold_test.dart';
+import 'learning/cupertinoWidget/cupertino_picker.dart';
+import 'learning/cupertinoWidget/cupertino_scrollbar.dart';
 
 void main() {
   var counter = Counter();
@@ -70,7 +74,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: CupertinoDatePickerTest(),
+      home: CupertinoScrollbarTest(),
       onGenerateRoute: Application.router.generator,
     );
   }
