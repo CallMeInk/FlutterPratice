@@ -35,6 +35,13 @@ import 'learning/cupertinoWidget/cupertino_navigation_bar_test.dart';
 import 'learning/cupertinoWidget/cupertino_page_scaffold_test.dart';
 import 'learning/cupertinoWidget/cupertino_picker.dart';
 import 'learning/cupertinoWidget/cupertino_scrollbar.dart';
+import 'learning/cupertinoWidget/cupertino_segmented_control_test.dart';
+import 'learning/cupertinoWidget/cupertino_slider_test.dart';
+import 'learning/cupertinoWidget/cupertino_sliding_segmented_control_test.dart';
+import 'learning/cupertinoWidget/cupertino_switch_test.dart';
+import 'learning/cupertinoWidget/cupertino_tab_bar_test.dart';
+import 'learning/cupertinoWidget/cupertino_textfield_test.dart';
+import 'learning/cupertinoWidget/cupertino_timer_picker_test.dart';
 
 void main() {
   var counter = Counter();
@@ -74,7 +81,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: CupertinoScrollbarTest(),
+      home: CupertinoTimerPickerTest(),
       onGenerateRoute: Application.router.generator,
     );
   }
